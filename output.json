@@ -1,0 +1,23 @@
+[
+  {
+    "output": "# One-Day Meal Plan for Marathon Runner - Carb-Loading & Training Day\n\nHere is a one-day meal plan for a vegetarian marathon runner preparing for a 20km long training run:\n\n* **Calorie Target:** Approximately 3,200 calories\n* **Macronutrient Breakdown:** Protein (110g), Fat (80g), Carbs (440g)\n\n## Meal Plan:\n\n* **Breakfast (6:30 AM):** Oatmeal (100g dry weight) with banana (150g), raisins (40g), and sunflower seeds (20g). Whole milk (250ml).\n    * Protein: 18g, Fat: 12g, Carbs: 95g\n\n* **Pre-Run Snack (8:30 AM):** White bread toast (60g) with jam (30g) and a sports drink (250ml, 6% carbs).\n    * Protein: 4g, Fat: 2g, Carbs: 65g\n\n* **Post-Run Recovery Meal (11:30 AM):** Chickpea pasta (80g dry weight) with marinara sauce (150g), steamed zucchini (100g), and grated cheese (30g). Whole wheat bread (50g).\n    * Protein: 22g, Fat: 8g, Carbs: 85g\n\n* **Lunch Snack (1:30 PM):** Greek yogurt (200g, plain) with honey (25g) and granola (40g, nut-free).\n    * Protein: 15g, Fat: 6g, Carbs: 50g\n\n* **Afternoon Snack (4:00 PM):** Rice cakes (40g) with avocado (80g) and tomato (50g).\n    * Protein: 5g, Fat: 10g, Carbs: 35g\n\n* **Dinner (7:00 PM):** Lentil curry (150g cooked lentils) with basmati rice (100g cooked), spinach (100g), and vegetable broth (200ml). Naan bread (60g).\n    * Protein: 30g, Fat: 12g, Carbs: 95g\n\n* **Evening Snack (9:00 PM):** Smoothie made with banana (100g), oat milk (200ml), and protein powder (25g).\n    * Protein: 16g, Fat: 2g, Carbs: 35g\n\n---\n\n**Key Features:** This meal plan prioritizes easily digestible carbohydrates for energy loading, with strategic timing before and after your 10:00 AM run. The elevated carb intake (440g) supports glycogen repletion for endurance training. All meals are vegetarian and nut-free, with adequate protein distributed throughout the day to support muscle recovery.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "68 kg",
+        "goal": "Marathon runner preparing for a 20km long training run scheduled for 10:00 AM, requiring carbohydrate-loading and strategic hydration around the workout",
+        "restrictions": "Vegetarian, no nuts"
+      },
+      "solution_criteria": [
+        "Meal plan covers all three meals plus pre/during/post-workout nutrition timed appropriately around the 10:00 AM training session",
+        "Includes adequate carbohydrates (approximately 7-10g per kg body weight) distributed strategically with emphasis on pre-workout fueling",
+        "Specifies hydration strategy with fluid intake recommendations before, during, and after the 20km run",
+        "All foods align with vegetarian diet and exclude nuts"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring specific carbohydrate-loading and hydration strategies with timing considerations around a long training session"
+    },
+    "score": 6,
+    "reasoning": "The solution meets all three mandatory requirements with clear daily totals, macronutrient breakdowns, and properly timed meals with exact portions. The meal plan is well-structured for a marathon runner with strategic carb-loading and appropriate pre/post-workout nutrition. However, it has a significant deficiency in the secondary criteria: the hydration strategy is almost entirely absent. While one sports drink is mentioned, there are no recommendations for hydration before the run, during the 20km effort, or post-run recovery hydration. This is a substantial gap given that hydration was explicitly listed as a required criterion. The carbohydrate total is also slightly conservative at the lower end of the recommended range."
+  }
+]

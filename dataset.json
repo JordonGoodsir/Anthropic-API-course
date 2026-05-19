@@ -1,20 +1,18 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., 's3://my-bucket-name/path/to/file.txt') and extract only the bucket name",
-    "format": "regex",
-    "solution_criteria": "The regex should correctly extract 'my-bucket-name' from the S3 URI and work with bucket names containing hyphens and numbers",
-    "animal": "Otter"
-  },
-  {
-    "task": "Create a JSON object representing an AWS IAM policy that allows read-only access to a specific S3 bucket named 'production-data'",
-    "format": "json",
-    "solution_criteria": "The JSON should be valid IAM policy syntax with correct Action, Resource, and Effect fields that grant only s3:GetObject and s3:ListBucket permissions",
-    "animal": "Penguin"
-  },
-  {
-    "task": "Write a Python function that takes an AWS EC2 instance ID as input and validates whether it follows the correct format (e.g., 'i-0123456789abcdef0')",
-    "format": "python",
-    "solution_criteria": "The function should return True for valid EC2 instance IDs and False for invalid ones, correctly checking the 'i-' prefix and hexadecimal format",
-    "animal": "Fox"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon runner preparing for a 20km long training run scheduled for 10:00 AM, requiring carbohydrate-loading and strategic hydration around the workout",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals plus pre/during/post-workout nutrition timed appropriately around the 10:00 AM training session",
+      "Includes adequate carbohydrates (approximately 7-10g per kg body weight) distributed strategically with emphasis on pre-workout fueling",
+      "Specifies hydration strategy with fluid intake recommendations before, during, and after the 20km run",
+      "All foods align with vegetarian diet and exclude nuts"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring specific carbohydrate-loading and hydration strategies with timing considerations around a long training session"
   }
 ]
