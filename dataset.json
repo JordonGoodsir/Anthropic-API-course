@@ -1,14 +1,20 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from an S3 URI (e.g., s3://my-bucket/path/to/file.txt) and extract just the bucket name",
-    "format": "regex"
+    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., 's3://my-bucket-name/path/to/file.txt') and extract only the bucket name",
+    "format": "regex",
+    "solution_criteria": "The regex should correctly extract 'my-bucket-name' from the S3 URI and work with bucket names containing hyphens and numbers",
+    "animal": "Otter"
   },
   {
-    "task": "Create a JSON CloudFormation template snippet that defines an AWS IAM role with a trust policy allowing EC2 instances to assume it",
-    "format": "json"
+    "task": "Create a JSON object representing an AWS IAM policy that allows read-only access to a specific S3 bucket named 'production-data'",
+    "format": "json",
+    "solution_criteria": "The JSON should be valid IAM policy syntax with correct Action, Resource, and Effect fields that grant only s3:GetObject and s3:ListBucket permissions",
+    "animal": "Penguin"
   },
   {
-    "task": "Write a Python function that takes an AWS region string and returns the corresponding ARN partition (e.g., 'us-east-1' returns 'aws', 'cn-north-1' returns 'aws-cn')",
-    "format": "python"
+    "task": "Write a Python function that takes an AWS EC2 instance ID as input and validates whether it follows the correct format (e.g., 'i-0123456789abcdef0')",
+    "format": "python",
+    "solution_criteria": "The function should return True for valid EC2 instance IDs and False for invalid ones, correctly checking the 'i-' prefix and hexadecimal format",
+    "animal": "Fox"
   }
 ]
